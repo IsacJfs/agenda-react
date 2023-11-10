@@ -1,7 +1,24 @@
-function App() {
+import React from 'react'
+import { Provider } from 'react-redux'
+import store from './store'
+import GlobalStyle, { Container, MainContainer } from './styles'
+import SideBar from './containers/Sidebar'
+import ListaAZ from './containers/ListAZ'
+
+const App: React.FC = () => {
   return (
     <>
-      <h1>Olá</h1>
+      <GlobalStyle />
+      <Provider store={store}>
+        <Container>
+          <div>
+            <SideBar />
+          </div>
+          <MainContainer>
+            <ListaAZ />
+          </MainContainer>
+        </Container>
+      </Provider>
     </>
   )
 }
