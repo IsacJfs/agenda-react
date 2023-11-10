@@ -1,6 +1,8 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
 
 export const Navbar = styled.div`
+  color: ${variaveis.corTextoMenu};
   h1 {
     text-align: center;
   }
@@ -8,6 +10,7 @@ export const Navbar = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-left: 32px;
   }
 `
 
@@ -20,15 +23,5 @@ export const ProfilePhoto = styled.img`
     width: 40px;
     height: 40px;
     align-items: start;
-  }
-`
-
-export const BotaoMenu = styled.button`
-  background-color: transparent;
-  border: none;
-
-  svg {
-    width: 32px;
-    height: 32px;
   }
 `

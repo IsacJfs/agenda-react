@@ -10,7 +10,7 @@ function retornaCorDeFundo(props: TagProps): string {
   if (props.$favorito) {
     return variaveis.amarelo
   } else {
-    return '#fff'
+    return variaveis.corTextoMenu
   }
   return '#ccc'
 }
@@ -23,13 +23,11 @@ export const Card = styled.div<TagProps>`
     #fff,
     ${(props) => retornaCorDeFundo(props)}
   );
-  box-shadow:
-    8px 8px 25px rgba(13, 39, 80, 16),
-    -14px -14px 24px #eee;
+  box-shadow: 8px 8px 16px rgba(13, 39, 80, 16);
   padding: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
   border-radius: 16px;
-  margin-top: 36px;
+  margin-top: 8px;
   display: grid;
   grid-template-columns: auto 32px;
 `
@@ -46,10 +44,6 @@ export const Campos = styled.input`
   font-size: 16px;
   background-color: transparent;
   border: none;
-
-  & :active {
-    background-color: red;
-  }
 `
 export const CampoName = styled.input`
   width: 100%;

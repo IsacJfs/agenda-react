@@ -12,42 +12,42 @@ const initialState: ContactState = {
       id: '1',
       favorito: true,
       name: 'primeiro nome',
-      phone: '61993458310',
+      phone: '61999999999',
       email: 'email@email.com'
     },
     {
       id: '2',
       favorito: true,
       name: 'Segundo nome',
-      phone: '61993458310',
+      phone: '61999999999',
       email: 'email@email.com'
     },
     {
       id: '3',
       favorito: false,
       name: 'Terceiro nome',
-      phone: '61993458310',
+      phone: '61999999999',
       email: 'email@email.com'
     },
     {
       id: '4',
       favorito: false,
       name: 'Quarto nome',
-      phone: '61993458310',
+      phone: '61999999999',
       email: 'email@email.com'
     },
     {
       id: '5',
       favorito: false,
       name: 'Quinto nome',
-      phone: '61993458310',
+      phone: '61999999999',
       email: 'email@email.com'
     },
     {
       id: '6',
       favorito: true,
       name: 'Sexto nome',
-      phone: '61993458310',
+      phone: '61999999999',
       email: 'email@email.com'
     }
   ]
